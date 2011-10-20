@@ -7,7 +7,6 @@ function h($s) {
 }
 
 $facebook = new Facebook($facebook_config);
-$session = $facebook->getSession();
 $fb_uid = $facebook->getUser();
 ?>
 Welcome, your fb_uid is <span style="color:red;"><?= h($fb_uid) ?></span>
