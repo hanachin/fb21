@@ -3,7 +3,7 @@ require '../src/facebook.php';
 require '../facebook_config.php';
 
 function h($s) {
-  return httpspecialchars($s, ENT_QUOTES);
+  return htmlspecialchars($s, ENT_QUOTES);
 }
 
 $facebook = new Facebook($facebook_config);
