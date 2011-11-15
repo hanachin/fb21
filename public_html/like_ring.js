@@ -19,4 +19,5 @@ window.fbAsyncInit = function() {
 
 FB.api('/me', function(response) {
     alert('Your name is ' + response.name);
+    console.log(response.name);
 });
